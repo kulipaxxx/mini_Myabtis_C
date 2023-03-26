@@ -1,4 +1,4 @@
-package com.cheng.mybatis;
+package com.cheng.mybatis.binding;
 
 import org.apache.ibatis.javassist.SerialVersionUID;
 
