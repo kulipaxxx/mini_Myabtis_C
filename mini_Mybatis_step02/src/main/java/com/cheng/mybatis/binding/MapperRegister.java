@@ -1,6 +1,7 @@
-package mybatis.binding;
+package com.cheng.mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
+import com.cheng.mybatis.session.Configuration;
 import com.cheng.mybatis.session.SqlSession;
 
 import java.util.HashMap;
@@ -14,6 +15,12 @@ import java.util.Set;
  * @Version 1.0
  */
 public class MapperRegister {
+
+    private Configuration configuration;
+
+    public MapperRegister(Configuration configuration){
+        this.configuration = configuration;
+    }
 
     /**
      * 将已经注册的映射代理器，加入到已知的集合中

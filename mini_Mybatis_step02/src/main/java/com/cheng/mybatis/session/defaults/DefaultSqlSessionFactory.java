@@ -1,6 +1,7 @@
-package mybatis.session.defaults;
+package com.cheng.mybatis.session.defaults;
 
 import com.cheng.mybatis.binding.MapperRegister;
+import com.cheng.mybatis.session.Configuration;
 import com.cheng.mybatis.session.SqlSession;
 import com.cheng.mybatis.session.SqlSessionFactory;
 
@@ -15,14 +16,14 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
     /**
      * 映射器注册器
      */
-    private MapperRegister mapperRegister;
+    private Configuration configuration;
 
-    public DefaultSqlSessionFactory(MapperRegister mapperRegister) {
-        this.mapperRegister = mapperRegister;
+    public DefaultSqlSessionFactory(Configuration configuration) {
+        this.configuration = configuration;
     }
 
     @Override
     public SqlSession openSession() {
-        return new DefaultSqlSession(mapperRegister);
+        return new DefaultSqlSession(configuration);
     }
 }

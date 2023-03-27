@@ -1,4 +1,4 @@
-package mybatis.session;
+package com.cheng.mybatis.session;
 
 /**
  * @Description: sqlSession
@@ -40,4 +40,11 @@ public interface SqlSession {
      * @return a mapper bound to this SqlSession
      */
     <T> T getMapper(Class<T> type);
+
+    /**
+     * Retrieves current configuration
+     * 得到配置
+     * @return Configuration
+     */
+    public Configuration getConfiguration();
 }

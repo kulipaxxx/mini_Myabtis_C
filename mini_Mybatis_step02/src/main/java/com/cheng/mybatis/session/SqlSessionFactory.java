@@ -1,4 +1,4 @@
-package mybatis.session;
+package com.cheng.mybatis.session;
 
 /**
  * @Description: SqlSessionFactory
