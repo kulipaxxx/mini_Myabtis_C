@@ -1,12 +1,10 @@
-package com.cheng.mybatis.session.binding;
+package com.cheng.mybatis.binding;
 
 import com.cheng.mybatis.session.SqlSession;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @Description: MapperProxy映射器代理类

@@ -1,4 +1,4 @@
-package com.cheng.mybatis.session.binding;
+package mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
 import com.cheng.mybatis.session.SqlSession;

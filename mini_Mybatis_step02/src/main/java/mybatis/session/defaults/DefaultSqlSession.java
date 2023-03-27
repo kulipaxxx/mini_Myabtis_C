@@ -1,4 +1,4 @@
-package com.cheng.mybatis.session.defaults;
+package mybatis.session.defaults;
 
 import com.cheng.mybatis.binding.MapperRegister;
 import com.cheng.mybatis.session.SqlSession;

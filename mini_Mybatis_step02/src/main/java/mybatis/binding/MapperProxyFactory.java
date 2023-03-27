@@ -1,9 +1,8 @@
-package com.cheng.mybatis.session.binding;
+package mybatis.binding;
 
 import com.cheng.mybatis.session.SqlSession;
 
 import java.lang.reflect.Proxy;
-import java.util.Map;
 
 /**
  * @Description: MapperProxyFactory
